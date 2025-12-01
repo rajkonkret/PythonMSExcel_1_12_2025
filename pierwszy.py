@@ -173,4 +173,15 @@ print(type(tupla1))  # <class 'tuple'>
 tupla_jeden = "Radek",
 print(type(tupla_jeden))  # <class 'tuple'>
 
-
+# zbiór - set()
+# przechowuje unikalne wartości
+# brak duplikatów
+# nie zachowuje kolejnosci
+lista = [2, 5, 6, 8, 6, 7, 8, 5, 9]
+zbior = set(lista)
+print(zbior)  # {2, 5, 6, 7, 8, 9}
+print(type(zbior))  # <class 'set'>
+pusty_zbior = set()
+print(pusty_zbior) # set()
+pusty_zbior.add(15)
+print(pusty_zbior) # {15}
