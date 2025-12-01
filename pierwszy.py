@@ -85,3 +85,11 @@ print(zmienna1.casefold() == zmienna2.casefold())  # True
 # typ logiczny, True, False
 print(1 != 0)  # != - różne
 
+name = "Radek"
+# f - f string, string sformatowany
+print(f"Nazywam się: {name} ")  # Nazywam się: {name}  -> Nazywam się: Radek
+
+a = 4.567
+print(f"Liczba: {a}")  # Liczba: 4.567
+# ctrl d - powielanie linii
+print(f"Liczba: {a:.2f}")  # Liczba: 4.57 - zaokrąglił wypisywania
