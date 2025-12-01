@@ -163,3 +163,14 @@ lista.clear()  # usunięcie eleemntów z listy o nazwie: lista
 print(lista)  # []
 print(lista_k)  # []
 print(lista_copy)  # ['Tomek', 'Miłka', 'Kaludia', 'Zenek']
+
+# krotka (tupla) - niemutowalna lista, do odczytu
+# pozwala lepiej zarzadzac pamięcią
+krotka = tuple(lista_copy)
+print(krotka)  # ('Tomek', 'Miłka', 'Kaludia', 'Zenek')
+tupla1 = "Radek", "Tomek"
+print(type(tupla1))  # <class 'tuple'>
+tupla_jeden = "Radek",
+print(type(tupla_jeden))  # <class 'tuple'>
+
+
