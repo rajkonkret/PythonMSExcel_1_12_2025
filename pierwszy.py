@@ -50,3 +50,18 @@ print(sys.float_info)
 print(0.1 + 0.2)  # 0.30000000000000004
 print(0.1 + 0.9)  # 1.0
 # decimal - pozwala ominąc problem zokrąglenia
+
+# zmienna - pudełko dane
+# typowanie dynamiczne
+name = "Radek"
+print(name)  # Radek
+name = 90
+print(name)  # 90
+# print(name + "Kowalski")
+
+a = "1"
+b = 0
+# print(a + b)  # TypeError: can only concatenate str (not "int") to str
+
+# rzutownie - int() - zamiana na całkowite
+print(int(a) + int(b))  # 1
