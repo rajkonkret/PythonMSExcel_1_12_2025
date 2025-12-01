@@ -65,3 +65,23 @@ b = 0
 
 # rzutownie - int() - zamiana na całkowite
 print(int(a) + int(b))  # 1
+
+# teksty są niemutowalne
+tekst = "Witaj Świecie"
+
+# """ Return a copy of the string converted to uppercase. """
+tekst.upper()  # nie zmienia oryginału
+print(tekst)  # Witaj Świecie
+print(tekst.upper())  # WITAJ ŚWIECIE
+nowy_tekst = tekst.upper()
+print(nowy_tekst)  # WITAJ ŚWIECIE
+
+zmienna1 = "GROSS"  # gross
+zmienna2 = "groẞ"
+
+print(zmienna1.lower() == zmienna2.lower())  # == porównanie, False
+print(zmienna1.casefold() == zmienna2.casefold())  # True
+
+# typ logiczny, True, False
+print(1 != 0)  # != - różne
+
