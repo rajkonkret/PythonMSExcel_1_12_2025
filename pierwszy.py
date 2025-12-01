@@ -138,5 +138,28 @@ print(type(liczba))  # <class 'int'>
 
 # lista - dowolne typy na raz, zachowuje kolejność
 lista = [1, 2, 3, 4, 5, 6, "Radek"]
-print(type(lista))
-print(lista) # [1, 2, 3, 4, 5, 6, 'Radek']
+print(type(lista))  # <class 'list'>
+print(lista)  # [1, 2, 3, 4, 5, 6, 'Radek']
+
+lista = []  # pusta lista
+
+lista.append("Radek")
+lista.append("Tomek")
+lista.append("Miłka")
+lista.append("Kaludia")
+lista.append("Zenek")
+print(lista)  # ['Radek', 'Tomek', 'Miłka', 'Kaludia', 'Zenek']
+
+# usuniecie
+lista.remove("Radek")
+print(lista)  # ['Tomek', 'Miłka', 'Kaludia', 'Zenek']
+
+lista_copy = lista.copy()
+lista_k = lista  # kopia referencji, kopia adresu listy
+print(lista_k)  # ['Tomek', 'Miłka', 'Kaludia', 'Zenek']
+print(lista)  # ['Tomek', 'Miłka', 'Kaludia', 'Zenek']
+
+lista.clear()  # usunięcie eleemntów z listy o nazwie: lista
+print(lista)  # []
+print(lista_k)  # []
+print(lista_copy)  # ['Tomek', 'Miłka', 'Kaludia', 'Zenek']
