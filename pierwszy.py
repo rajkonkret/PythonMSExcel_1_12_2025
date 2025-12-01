@@ -182,6 +182,10 @@ zbior = set(lista)
 print(zbior)  # {2, 5, 6, 7, 8, 9}
 print(type(zbior))  # <class 'set'>
 pusty_zbior = set()
-print(pusty_zbior) # set()
+print(pusty_zbior)  # set()
 pusty_zbior.add(15)
-print(pusty_zbior) # {15}
+print(pusty_zbior)  # {15}
+
+zbior1 = {5, 6, 8}
+print(zbior.intersection(zbior1))  # {8, 5, 6}, część wspólna zbiorów
+print(zbior & zbior1)  # {8, 5, 6}, część wspólna zbiorów
