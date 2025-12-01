@@ -219,3 +219,26 @@ print(slownik.items())
 # dict_keys(['name', 'age'])
 # dict_values(['Radek', 56])
 # dict_items([('name', 'Radek'), ('age', 56)])
+slownik = {1: "Radek", "age": 56}
+print(slownik[1])  # Radek
+
+# warunek
+odp = "Radek"
+if odp == "Radek":
+    print("Ok")  # 4 space
+elif odp == "Tomek":
+    print("Tomek")
+else:
+    print("inny")
+
+# # od python 3.10
+# odp = input("Podja znany Ci język programowania")
+#
+# # strip() - usunięcie białych znaków
+# match odp.casefold().strip():
+#     case "python":
+#         print("Lubię pythona")
+#     case "java":
+#         print("Lubię jave")
+#     case _:  # zastępuje elsee
+#         print("Inny")
