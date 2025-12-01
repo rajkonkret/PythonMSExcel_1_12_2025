@@ -122,3 +122,21 @@ print(100 / 3)  # 33.333333333333336
 print(100 // 3)  # 33 - częśc cąlkowita z dzielenia
 print(100 % 3)  # modulo, reszta z dzielenia 33 * 3 = 99, 100 - 99 = 1 reszta = 1
 print(10 % 2)  # parzysta, reszta z dzielenia przez 2 jest 0
+
+zysk = 890123456765123
+print(f"Nasza duża liczba: {zysk:,} ")  # Nasza duża liczba: 890,123,456,765,123
+print(f"Nasza duża liczba: {zysk:_} ")  # Nasza duża liczba: 890_123_456_765_123
+print(f"Nasza duża liczba: {zysk:_} ".replace("_", " "))  # Nasza duża liczba: 890 123 456 765 123
+print(f"Nasza duża liczba: {zysk:_} ".replace("_", "."))  # Nasza duża liczba: 890.123.456.765.123
+
+liczba = 15_000_000_000_000
+print(liczba)  # 15000000000000
+print(type(liczba))  # <class 'int'>
+# https://naukapythona.com.pl/
+
+# kolekcje - przechowuje wiele danych
+
+# lista - dowolne typy na raz, zachowuje kolejność
+lista = [1, 2, 3, 4, 5, 6, "Radek"]
+print(type(lista))
+print(lista) # [1, 2, 3, 4, 5, 6, 'Radek']
