@@ -47,7 +47,7 @@ for value in ws.iter_rows(
 
 # print(my_list)
 pprint(my_list)
-wb.close()
+
 # [('Rank', 'Name', 'Platform', 'Year', 'Genre', 'Publisher'),
 #  (1, 'Wii Sports', 'Wii', 2006, 'Sports', 'Nintendo'),
 #  (2, 'Super Mario Bros.', 'NES', 1985, 'Platform', 'Nintendo'),
@@ -66,3 +66,11 @@ for ele1, ele2, ele3, ele4, ele5, ele6 in my_list:
 # < - wyrównie do lewej
 # > do prawej
 # ^ wyśrodkowane
+
+# "Sum of Sales"
+# K1
+
+ws['K1'] = "Sum of Sales"
+
+wb.save('video2.xlsx')
+wb.close()
