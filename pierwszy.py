@@ -242,3 +242,48 @@ else:
 #         print("Lubię jave")
 #     case _:  # zastępuje elsee
 #         print("Inny")
+
+# pętle
+for i in range(5):  # od 0 do 4
+    print(i)
+# 0
+# 1
+# 2
+# 3
+# 4
+
+for i in lista:
+    print(i)
+# 1
+# 2
+# 3
+# 4
+# 5
+# 6
+# Radek
+
+for i in range(5):
+    print('Radek')
+    print(i)
+    print("Wykonane w pętli")
+print("Poza pętlą")
+# 3
+# Wykonane w pętli
+# Radek
+# 4
+# Wykonane w pętli
+# Poza pętlą
+
+# pętla sterowana warunkiem - while
+licznik = 0
+while licznik < 10:
+    print("Komunikat")
+    licznik += 1  # licznik = licznik + 1
+
+# list comprehensions
+print([x * 2 for x in {1, 2, 3, 4, 5}])
+# [2, 4, 6, 8, 10]
+l1 = []
+for x in {1, 2, 3, 4, 5}:
+    l1.append(x * 2)
+print(l1)  # [2, 4, 6, 8, 10]
