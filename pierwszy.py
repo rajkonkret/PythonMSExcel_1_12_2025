@@ -93,3 +93,32 @@ a = 4.567
 print(f"Liczba: {a}")  # Liczba: 4.567
 # ctrl d - powielanie linii
 print(f"Liczba: {a:.2f}")  # Liczba: 4.57 - zaokrąglił wypisywania
+
+# - float
+# %f - float
+print("Liczba: %f" % a)  # Liczba: 4.567000
+print("Liczba: %.2f" % a)  # Liczba: 4.57
+print("Liczba: %.1f" % a)  # Liczba: 4.6
+print("Liczba: %.0f" % a)  # Liczba: 5
+print("Liczba: %.f" % a)  # Liczba: 5
+# print("Liczba: %.f" % "Radek")  # TypeError: must be real number, not str, sprawdza typy
+
+print("""
+Tekst
+    wielolinijkowy""")
+# Tekst
+#     wielolinijkowy
+print("""
+    
+        
+        
+        """)
+
+#
+"""Komentarz
+    wielolinijkowe - dokumentacja"""
+
+print(100 / 3)  # 33.333333333333336
+print(100 // 3)  # 33 - częśc cąlkowita z dzielenia
+print(100 % 3)  # modulo, reszta z dzielenia 33 * 3 = 99, 100 - 99 = 1 reszta = 1
+print(10 % 2)  # parzysta, reszta z dzielenia przez 2 jest 0
