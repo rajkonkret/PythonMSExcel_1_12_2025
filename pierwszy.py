@@ -189,3 +189,33 @@ print(pusty_zbior)  # {15}
 zbior1 = {5, 6, 8}
 print(zbior.intersection(zbior1))  # {8, 5, 6}, część wspólna zbiorów
 print(zbior & zbior1)  # {8, 5, 6}, część wspólna zbiorów
+
+# słownik - klucz - wartossc
+slownik = {'name': "Radek", "age": 56}
+print(slownik)  # {'name': 'Radek', 'age': 56}
+print(type(slownik))  # <class 'dict'>
+
+pusty_slownik = {}
+print(type(pusty_slownik))  # <class 'dict'>
+print(pusty_slownik)  # {}
+
+# wypisanie danych po indeksie
+# od 0
+lista = [1, 2, 3, 4, 5, 6, "Radek"]
+print(lista[0])
+print(lista[2])
+print(lista[6])  # Radek
+print(lista[-1])  # ostatni element
+
+tupla1 = "Radek", "Tomek", "Zenek"
+print(tupla1[1])  # Tomek
+
+slownik = {'name': "Radek", "age": 56}
+print(slownik['name'])  # Radek
+
+print(slownik.keys())
+print(slownik.values())
+print(slownik.items())
+# dict_keys(['name', 'age'])
+# dict_values(['Radek', 56])
+# dict_items([('name', 'Radek'), ('age', 56)])
