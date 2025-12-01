@@ -1,9 +1,11 @@
 import openpyxl
 
-wb = openpyxl.load_workbook(r"video2.xlsx")
+filename = "video2.xlsx"
+
+wb = openpyxl.load_workbook(filename)
 ws = wb.active
 
 ws = wb['vgsales']
 
-wb.save("video2.xlsx")
+wb.save(filename)
 wb.close()
