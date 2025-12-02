@@ -28,3 +28,17 @@ print(df)
 # 1  Samen    181
 # 2  Darek    170
 # 3   Jhon    167
+
+# ExcelFile pozwala odczytac nazwy kolumn
+dane = pd.ExcelFile("excel_with_multiple_sheets.xlsx")
+print(dane.sheet_names)  # ['height', 'weight', 'marks']
+
+df = pd.read_excel("excel_with_multiple_sheets.xlsx", sheet_name="marks", usecols=["Name"])
+print("The dataframe is:")
+print(df)
+# The dataframe is:
+#     Name
+# 0  Adiya
+# 1  Samen
+# 2  Darek
+# 3   Jhon
