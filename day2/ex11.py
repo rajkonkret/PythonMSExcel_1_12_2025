@@ -26,11 +26,22 @@ ws = wb.active
 
 # ws = wb.active
 # print(ws.title)  # Total Sales by Genre
+#
 
-ws = wb['Video Games Sales Data']
-ws['A1'].font = Font(bold=True, size=12)
+# ustawienie fontu dla wiersza 1
+# ws = wb['Video Games Sales Data']
+# ws['A1'].font = Font(bold=True, size=12)
+#
+# for cell in ws[1:1]:  # openpyxl numeruje od 1
+#     cell.font = Font(bold=True, size=12)
+#
+#
+#
+
+# dodanie arkusza do pliku
+wb.create_sheet("Empty Sheet")
+print(wb.sheetnames)
+
 
 wb.save('video3.xlsx')
 wb.close()
-
-
