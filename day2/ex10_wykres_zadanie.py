@@ -27,6 +27,8 @@ chart.y_axis.title = "Miesiąc"
 
 chart.legend.position = "r"  # prawa strona
 # chart.legend.position = "t" # top
+# chart.legend.position = "tr" # top-right
+# chart.legend.position = "b" # bottom
 
 chart.legend.overlay = False  # dodakowa przestrzeń ma legende
 chart.width = 20  # wielkośc wykresu
