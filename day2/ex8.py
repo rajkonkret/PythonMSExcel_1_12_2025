@@ -21,6 +21,24 @@ cats = Reference(ws,
 # tworzenie wykrsu słupkowego
 chart = BarChart()
 chart.add_data(values, titles_from_data=True)
+chart.set_categories(cats)  # wypełnienie legendy
+
+chart.title = "Total Sales"
+chart.x_axis.title = "Genre"
+chart.y_axis.title = "Total Sales by Genre"
+
+# chart.y_axis.majorUnit = 50
+chart.y_axis.majorUnit = 200
+
+# wyłaczenie domyślnych ustawień
+chart.x_axis.delete = False
+chart.y_axis.delete = False
+
+chart.y_axis.majorGridlines = ChartLines()
+chart.y_axis.tickLblPos = "nextTo"
+chart.y_axis.number_format = '0'
+
+chart.x_axis.majorGridlines = ChartLines()
 
 # wpisanie wykresu do komórki
 ws.add_chart(chart, 'D2')
