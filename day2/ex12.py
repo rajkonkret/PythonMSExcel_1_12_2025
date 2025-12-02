@@ -8,3 +8,10 @@ wb = openpyxl.load_workbook('video3.xlsx')
 ws = wb.active
 
 print(ws.title)
+
+# rgb -> FF0000 -> red
+ws['A1'].font = Font(color="FF0000", bold=True, size=12)
+ws['A2'].font = Font(color="0000FF")
+
+wb.save('video3.xlsx')
+wb.close()
