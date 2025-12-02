@@ -12,10 +12,12 @@ column_names = ['Name', "Height"]
 
 df = pd.DataFrame(data, columns=column_names)
 
-writer = pd.ExcelWriter("excel_with_list.xlsx", engine="xlsxwriter")
+# writer = pd.ExcelWriter("excel_with_list.xlsx", engine="xlsxwriter")
+writer = pd.ExcelWriter("excel_with_list.xlsx", engine="openpyxl")  # inny writer
 # sprawdzenie wyłaczenia pogrubienia kolumn
 
 # df.to_excel(writer)
 # df.to_excel(writer, index=False)  # bez kolumny index
-df.to_excel(writer, index=False, sheet_name='first_sheet')  # nazwa arkusza
+# df.to_excel(writer, index=False, sheet_name='first_sheet')  # nazwa arkusza
+df.to_excel(writer, index=False, sheet_name='first_sheet', startcol=4, startrow=3)  # nazwa arkusza
 writer.close()
