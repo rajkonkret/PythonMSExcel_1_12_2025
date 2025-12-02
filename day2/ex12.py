@@ -34,5 +34,25 @@ ws['A1'].fill = PatternFill('lightVertical', start_color="38e3ff")
 # FILL_PATTERN_LIGHTUP = 'lightUp'
 # FILL_PATTERN_LIGHTVERTICAL = 'lightVertical'
 # FILL_PATTERN_MEDIUMGRAY = 'mediumGray'
+
+#    "dashDot",
+#     "dashDotDot",
+#     "dashed",
+#     "dotted",
+#     "double",
+#     "hair",
+#     "medium",
+#     "mediumDashDot",
+#     "mediumDashDotDot",
+#     "mediumDashed",
+#     "slantDashDot",
+#     "thick",
+#     "thin",
+# ramka
+my_border = Side(border_style="thick", color="000000")
+ws['A1'].border = Border(
+    top=my_border, left=my_border, right=my_border, bottom=my_border
+)
+
 wb.save('video3.xlsx')
 wb.close()
