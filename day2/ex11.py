@@ -39,9 +39,17 @@ ws = wb.active
 #
 
 # dodanie arkusza do pliku
-wb.create_sheet("Empty Sheet")
-print(wb.sheetnames)
+# wb.create_sheet("Empty Sheet")
+# print(wb.sheetnames)
 
+
+# usunięcie arkusza z pliku
+# wb.remove(wb['Empty Sheet'])
+# print(wb.sheetnames)
+# ['Video Games Sales Data', 'Total Sales by Genre', 'Breakdown of Sales by Genre', 'Breakdown of Sales by Year']
+
+# kopiowanie arkusza
+wb.copy_worksheet(wb["Video Games Sales Data"])
 
 wb.save('video3.xlsx')
 wb.close()
