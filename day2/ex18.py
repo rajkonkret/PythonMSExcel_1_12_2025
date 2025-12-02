@@ -1,3 +1,5 @@
+import pandas as pd
+
 height_data = [
     {"Name": "Adiya", "Height": 179},
     {"Name": "Samen", "Height": 181},
@@ -18,3 +20,7 @@ marks_data = [
     {"Name": "Darek", "Marks": 170},
     {"Name": "Jhon", "Marks": 167},
 ]
+
+height_data_df = pd.DataFrame(height_data)
+weight_data_df = pd.DataFrame(weight_data)
+marks_data_df = pd.DataFrame(marks_data)
