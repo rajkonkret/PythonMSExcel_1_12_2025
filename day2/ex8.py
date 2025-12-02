@@ -17,3 +17,13 @@ cats = Reference(ws,
                  max_col=1,
                  min_row=2,
                  max_row=13)
+
+# tworzenie wykrsu słupkowego
+chart = BarChart()
+chart.add_data(values, titles_from_data=True)
+
+# wpisanie wykresu do komórki
+ws.add_chart(chart, 'D2')
+
+wb.save('video2.xlsx')
+wb.close()
