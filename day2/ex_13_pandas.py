@@ -7,5 +7,5 @@ import pandas as pd
 writer = pd.ExcelWriter('empty_excel.xlsx')
 empty_dataframe = pd.DataFrame()  # tablica/ macierz
 
-empty_dataframe.to_excelwriter(sheet_name='empty')
+empty_dataframe.to_excel(writer, sheet_name='empty')
 writer.close()  # przy pracy z writerem musimy używać close()
