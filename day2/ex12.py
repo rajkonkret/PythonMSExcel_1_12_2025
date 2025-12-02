@@ -73,5 +73,21 @@ ws.conditional_formatting.add(
     )
 )
 
+fill_gt = PatternFill(
+    start_color='30EE30',
+    end_color="30EE90",
+    fill_type=FILL_PATTERN_DARKUP
+)
+
+ws.conditional_formatting.add(
+    'G2:K16328',
+    CellIsRule(
+        operator="greaterThan",
+        formula=[8],
+        fill=fill_gt,
+        font=Font(color="FF00FF")
+    )
+)
+
 wb.save('video3.xlsx')
 wb.close()
